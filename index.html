@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как изменить мышление и выйти на доход 300к</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1d2e 0%, #252847 100%);
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .header {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px 0 20px;
+      box-sizing: border-box;
+    }
+    .header-bg {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 0;
+      background: radial-gradient(ellipse at 70% 20%, rgba(255,255,255,0.08) 0%, rgba(26,29,46,0.9) 80%),
+                  repeating-radial-gradient(circle at 30% 80%, #ffd70022 0, #ffd70000 40px, #ffd70011 80px, #ffd70000 120px),
+                  url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="1.5" fill="white" opacity="0.3"/><circle cx="80" cy="40" r="1" fill="white" opacity="0.2"/><circle cx="200" cy="100" r="2" fill="white" opacity="0.15"/></svg>');
+      background-size: cover;
+      pointer-events: none;
+      animation: bgmove 20s linear infinite alternate;
+    }
+    @keyframes bgmove {
+      0% { background-position: 0 0, 0 0, 0 0; }
+      100% { background-position: 20px 40px, 40px 80px, 60px 120px; }
+    }
+    .speaker-photo {
+      flex: 0 0 510px;
+      max-width: 600px;
+      min-width: 330px;
+      min-height: 480px;
+      z-index: 1;
+      margin-right: 40px;
+      overflow: visible;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    .speaker-photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      min-width: 330px;
+      min-height: 480px;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+    }
+    .header-content {
+      flex: 1 1 0;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 600px;
+    }
+    .header-content .pretitle {
+      font-size: 1.1rem;
+      color: #f4d03f;
+      font-weight: 500;
+      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .header-content .subtitle {
+      font-size: 1.2rem;
+      color: #cccccc;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+    .header-content .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+    .header-content .title .accent {
+      color: #ffd700;
+      font-size: 3.5rem;
+      font-weight: bold;
+      letter-spacing: -0.03em;
+      text-shadow: 0 2px 16px #f4d03f44;
+      transition: text-shadow 0.3s;
+    }
+    .header-content .title .accent:hover {
+      text-shadow: 0 4px 32px #ffd700cc, 0 0 8px #fff;
+    }
+    .cta-block {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 215, 0, 0.08);
+      border: 2px solid #ffd700;
+      border-radius: 16px;
+      padding: 18px 28px;
+      margin-top: 32px;
+      gap: 24px;
+      box-shadow: 0 4px 24px rgba(244, 208, 63, 0.10);
+      transition: box-shadow 0.3s;
+    }
+    .cta-block:hover {
+      box-shadow: 0 8px 32px #ffd70044;
+    }
+    .cta-btn {
+      background: linear-gradient(135deg, #f4d03f 0%, #ffd700 100%);
+      color: #1a1d2e;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3);
+      margin-right: 18px;
+      transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+      outline: none;
+      text-decoration: none;
+    }
+    .cta-btn:hover, .cta-btn:focus {
+      background: linear-gradient(135deg, #ffd700 0%, #f4d03f 100%);
+      color: #252847;
+      box-shadow: 0 8px 32px #ffd70088;
+    }
+    .cta-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 1rem;
+      color: #fff;
+      font-weight: 500;
+    }
+    .cta-info .places {
+      color: #ffd700;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 900px) {
+      .header {
+        flex-direction: column;
+        align-items: stretch;
+        min-height: unset;
+        padding: 24px 8px 0 8px;
+      }
+      .speaker-photo {
+        margin: 0 auto 32px auto;
+        max-width: 320px;
+      }
+      .header-content {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+      .cta-block {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+      }
+      .cta-btn {
+        margin: 0 0 8px 0;
+        width: 100%;
+      }
+      .cta-info {
+        align-items: center;
+      }
+    }
+    @media (max-width: 600px) {
+      .header {
+        padding: 12px 0 0 0 !important;
+        min-width: 0 !important;
+        width: 100vw !important;
+        box-sizing: border-box !important;
+      }
+      .header-content {
+        max-width: 100vw !important;
+        width: 100vw !important;
+        padding: 0 8px !important;
+        box-sizing: border-box !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+      .header-content .title {
+        font-size: 2rem !important;
+        word-break: break-word !important;
+        max-width: 100vw !important;
+      }
+      .header-content .title .accent {
+        font-size: 2.7rem !important;
+      }
+      .header-content .subtitle {
+        font-size: 1rem !important;
+        max-width: 100vw !important;
+      }
+      .cta-block {
+        flex-direction: column !important;
+        gap: 12px !important;
+        align-items: stretch !important;
+        padding: 8px 4px !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+      }
+      .cta-btn {
+        width: 100% !important;
+        max-width: 100vw !important;
+        font-size: 1rem !important;
+        padding: 12px 0 !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+        display: block !important;
+      }
+      .cta-info {
+        align-items: center !important;
+        font-size: 0.95rem !important;
+        max-width: 100vw !important;
+      }
+      .cta-info .places {
+        font-size: 1rem !important;
+      }
+    }
+    .cta-block, .cta-btn {
+      box-sizing: border-box !important;
+    }
+    @media (max-width: 700px) {
+      .video-flex-mobile {
+        flex-direction: column !important;
+        gap: 16px !important;
+        align-items: stretch !important;
+      }
+      .video-flex-mobile video {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .tg-btn-flex {
+        flex-direction: row !important;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px !important;
+      }
+      .tg-btn-flex a {
+        width: auto !important;
+        min-width: 0 !important;
+      }
+      .tg-btn-flex img {
+        width: 48px !important;
+        height: 48px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-bg"></div>
+    <div class="speaker-photo">
+      <img src="images/oksana.png" alt="Оксана Асалханова, спикер" />
+    </div>
+    <div class="header-content">
+      <div class="pretitle">Наставник Оксана Асалханова</div>
+      <div class="title">
+        КАК ИЗМЕНИТЬ МЫШЛЕНИЕ И ВЫЙТИ НА ДОХОД <span class="accent">300к</span>
+      </div>
+      <div class="subtitle">Коуч и психолог с 25 летним опытом</div>
+      <div class="cta-block">
+        <a class="cta-btn" href="https://t.me/Oxanaasa" target="_blank" rel="noopener noreferrer">Зарегистрироваться</a>
+        <div class="cta-info">
+          <span class="places">Осталось 20 мест</span>
+          <span>5 занятий по 2 часа</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section style="max-width: 1200px; margin: 60px auto 140px auto; padding: 0 20px;">
+    <h2 style="text-align: center; font-size: 2.2rem; font-weight: bold; margin-bottom: 40px; text-transform: uppercase;">
+      ТРЕНИНГ ДЛЯ ТЕХ, КТО ХОЧЕТ:
+    </h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 60px;">
+      <!-- Иконка 1 -->
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div style="flex: 1 1 260px; max-width: 320px; padding: 32px 18px; text-align: center; display: flex; align-items: center; justify-content: center;">
+          <img src="images/упаковка.png" alt="Упаковка" style="width: 128px; height: 128px; object-fit: contain;" />
+        </div>
+        <div style="font-size: 1.1rem; font-weight: 500; color: #fff; text-align: center; margin-top: 2px; max-width: 400px;">
+          Систематизировать свою экспертность<br>и упаковать в сильный продукт
+        </div>
+      </div>
+      <!-- Иконка 2 -->
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div style="flex: 1 1 260px; max-width: 320px; padding: 32px 18px; text-align: center; display: flex; align-items: center; justify-content: center;">
+          <img src="images/рамки.jpg" alt="Рамки" style="width: 128px; height: 128px; object-fit: contain;" />
+        </div>
+        <div style="font-size: 1.1rem; font-weight: 500; color: #fff; text-align: center; margin-top: 2px; max-width: 400px;">
+          Проработать свои ограничивающие убеждения<br>и увеличить доход
+        </div>
+      </div>
+      <!-- Иконка 3 -->
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div style="flex: 1 1 260px; max-width: 320px; padding: 32px 18px; text-align: center; display: flex; align-items: center; justify-content: center;">
+          <img src="images/мозг.png" alt="Мозг" style="width: 128px; height: 128px; object-fit: contain;" />
+        </div>
+        <div style="font-size: 1.1rem; font-weight: 500; color: #fff; text-align: center; margin-top: 2px; max-width: 400px;">
+          Быстрого старта, поддержки<br>и мотивации
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 3-й блок: Видео и приглашение в Telegram -->
+  <section style="max-width: 1200px; margin: 0 auto 120px auto; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+    <div style="flex: 1 1 380px; min-width: 320px; max-width: 520px;">
+      <h2 class="section-3-title" style="font-size: 2.8rem; font-weight: bold; margin-bottom: 48px; color: #fff;">ПОСМОТРИТЕ, КАК ПРОХОДЯТ МОИ МЕРОПРИЯТИЯ</h2>
+      <div class="section-3-subtitle" style="font-size: 1.1rem; color: #cccccc; margin-bottom: 28px; max-width: 420px;">и присоединяйтесь к нашему телеграм-каналу, чтобы первым узнавать о предстоящих событиях</div>
+      <div class="tg-btn-flex" style="display: flex; flex-direction: row; align-items: center; gap: 18px; margin-top: 18px;">
+        <a href="https://t.me/OxanaAsalhanova" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: linear-gradient(135deg, #f4d03f 0%, #ffd700 100%); color: #1a1d2e; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3); transition: background 0.3s, box-shadow 0.3s, color 0.3s;">ПРИСОЕДИНИТЬСЯ</a>
+        <img src="images/tg.png" alt="Telegram" style="vertical-align: middle; width: 65px; height: 65px; display: inline-block;" />
+      </div>
+    </div>
+    <div class="video-flex-mobile" style="flex: 1 1 420px; min-width: 320px; max-width: 600px; display: flex; flex-direction: row; align-items: center; gap: 24px; justify-content: center;">
+      <video controls style="width: 100%; max-width: 347px; border-radius: 16px; box-shadow: 0 4px 24px rgba(244, 208, 63, 0.10); background: #000;">
+        <source src="video/онлайн.MOV" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+      </video>
+      <video controls style="width: 100%; max-width: 347px; border-radius: 16px; box-shadow: 0 4px 24px rgba(244, 208, 63, 0.10); background: #000;">
+        <source src="video/1.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+      </video>
+    </div>
+  </section>
+  <!-- 4-й блок: Что вас ждет на тренинге (адаптивный, круглая фигура) -->
+  <section style="max-width: 1200px; margin: 0 auto 120px auto; padding: 0 20px;">
+    <style>
+      @media (max-width: 700px) {
+        .training-flex {
+          flex-direction: column !important;
+          gap: 32px !important;
+          min-height: unset !important;
+          align-items: center !important;
+        }
+        .training-col {
+          min-width: 0 !important;
+          max-width: 100% !important;
+          width: 100% !important;
+          align-items: center !important;
+          text-align: center !important;
+          height: auto !important;
+        }
+        .training-center {
+          width: 100% !important;
+          max-width: 320px !important;
+          aspect-ratio: 1/1 !important;
+          margin: 0 auto 24px auto !important;
+          height: auto !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+        }
+        .training-center-inner {
+          width: 100% !important;
+          height: 100% !important;
+          aspect-ratio: 1/1 !important;
+          border-radius: 50% !important;
+          box-shadow: 0 0 80px 20px #ffd70055, 0 0 0 16px #23243a;
+          background: #23243a;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+        }
+        .training-center img {
+          width: 80% !important;
+          max-width: 220px !important;
+          height: auto !important;
+          border-radius: 50% !important;
+          margin: 0 auto !important;
+        }
+      }
+      @media (min-width: 701px) {
+        .training-center {
+          width: 420px;
+          height: 420px;
+          aspect-ratio: 1/1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .training-center-inner {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          box-shadow: 0 0 80px 20px #ffd70055, 0 0 0 16px #23243a;
+          background: #23243a;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .training-center img {
+          width: 340px;
+          height: 340px;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center;
+          display: block;
+          box-shadow: 0 0 40px #ffd70033;
+          background: none;
+        }
+      }
+    </style>
+    <h2 style="text-align: center; font-size: 2.2rem; font-weight: bold; margin-bottom: 48px; text-transform: uppercase; letter-spacing: 0.02em;">ЧТО ВАС ЖДЕТ НА ТРЕНИНГЕ</h2>
+    <div class="training-flex" style="display: flex; justify-content: center; align-items: center; position: relative; min-height: 520px; gap: 80px;">
+      <!-- Левая колонка -->
+      <div class="training-col" style="display: flex; flex-direction: column; justify-content: space-between; height: 420px; z-index: 2; min-width: 340px; max-width: 370px;">
+        <div style="margin-bottom: 0;">
+          <div style="font-size: 2rem; font-weight: bold; color: #fff; text-shadow: 0 0 32px #ffd70099;">01.</div>
+          <div style="font-weight: bold; color: #ffd700; margin-bottom: 6px; font-size: 1.1rem;">Повышение уверенности в себе</div>
+          <div style="color: #fff; font-size: 1rem; max-width: 320px;">Научишься уверенно презентовать себя и продавать без страха и сомнений</div>
+        </div>
+        <div style="margin-bottom: 0;">
+          <div style="font-size: 2rem; font-weight: bold; color: #fff; text-shadow: 0 0 32px #ffd70099;">02.</div>
+          <div style="font-weight: bold; color: #ffd700; margin-bottom: 6px; font-size: 1.1rem;">Выработка аналитических навыков</div>
+          <div style="color: #fff; font-size: 1rem; max-width: 320px;">Будешь быстро анализировать информацию, видеть суть и принимать точные решения</div>
+        </div>
+        <div>
+          <div style="font-size: 2rem; font-weight: bold; color: #fff; text-shadow: 0 0 32px #ffd70099;">03.</div>
+          <div style="font-weight: bold; color: #ffd700; margin-bottom: 6px; font-size: 1.1rem;">Выработка навыков планирования и коучинга</div>
+          <div style="color: #fff; font-size: 1rem; max-width: 320px;">Освоишь целеполагание и сопровождение клиентов до результата с чёткой структурой</div>
+        </div>
+      </div>
+      <!-- Центр: фото микрофона с эффектом свечения -->
+      <div class="training-center">
+        <div class="training-center-inner">
+          <img src="images/микрофон.png" alt="Микрофон" />
+        </div>
+      </div>
+      <!-- Правая колонка -->
+      <div class="training-col" style="display: flex; flex-direction: column; justify-content: space-between; height: 420px; z-index: 2; align-items: flex-end; min-width: 340px; max-width: 370px;">
+        <div style="margin-bottom: 0;">
+          <div style="font-size: 2rem; font-weight: bold; color: #fff; text-shadow: 0 0 32px #ffd70099;">04.</div>
+          <div style="font-weight: bold; color: #ffd700; margin-bottom: 6px; font-size: 1.1rem;">Способность ясно доносить идею</div>
+          <div style="color: #fff; font-size: 1rem; max-width: 320px;">Научишься говорить чётко и по делу, без “воды” и лишних слов</div>
+        </div>
+        <div style="margin-bottom: 0;">
+          <div style="font-size: 2rem; font-weight: bold; color: #fff; text-shadow: 0 0 32px #ffd70099;">05.</div>
+          <div style="font-weight: bold; color: #ffd700; margin-bottom: 6px; font-size: 1.1rem;">Техники продаж</div>
+          <div style="color: #fff; font-size: 1rem; max-width: 320px;">Освоишь практические инструменты влияния, убеждения и экологичной работы с возражениями</div>
+        </div>
+        <div>
+          <div style="font-size: 2rem; font-weight: bold; color: #fff; text-shadow: 0 0 32px #ffd70099;">06.</div>
+          <div style="font-weight: bold; color: #ffd700; margin-bottom: 6px; font-size: 1.1rem;">Работа с командой</div>
+          <div style="color: #fff; font-size: 1rem; max-width: 320px;">Разовьёшь навык эффективной коммуникации, делегирования и построения сильной команды</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    @media (max-width: 700px) {
+      .training-col {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        align-items: center !important;
+        text-align: center !important;
+        height: auto !important;
+      }
+    }
+  </style>
+  <!-- 5-й блок: Оксана, достижения и фото справа/по центру -->
+  <section class="mentor-block" style="max-width: 1200px; margin: 0 auto 120px auto; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+    <style>
+      @media (max-width: 700px) {
+        .mentor-block {
+          flex-direction: column !important;
+          align-items: stretch !important;
+        }
+        .mentor-info {
+          max-width: 100% !important;
+        }
+        .mentor-photo {
+          display: block !important;
+          margin: 0 auto 24px auto !important;
+          max-width: 320px !important;
+          width: 100% !important;
+        }
+        .mentor-photo img {
+          width: 100% !important;
+          max-width: 320px !important;
+          margin: 0 auto !important;
+          display: block !important;
+        }
+        .mentor-info h3,
+        .mentor-info h2 {
+          text-align: center !important;
+          width: 100%;
+        }
+      }
+      @media (min-width: 701px) {
+        .mentor-info-flex {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 40px;
+        }
+        .mentor-info {
+          flex: 1 1 520px;
+          min-width: 320px;
+          max-width: 600px;
+        }
+        .mentor-photo {
+          flex: 1 1 380px;
+          min-width: 320px;
+          max-width: 520px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin: 0;
+        }
+        .mentor-photo img {
+          width: 100%;
+          max-width: 420px;
+          border-radius: 32px;
+          box-shadow: 0 8px 48px #ffd70044, 0 0 0 12px #23243a;
+          object-fit: cover;
+          background: #23243a;
+        }
+      }
+      @media (max-width: 700px) {
+        .mentor-photo {
+          margin-top: 32px !important;
+        }
+      }
+    </style>
+    <div class="mentor-info-flex">
+      <div class="mentor-info" style="max-width: 600px;">
+        <h3 style="color: #fff; font-size: 1.1rem; font-weight: 500; margin-bottom: 8px; letter-spacing: 0.05em; text-transform: uppercase;">наставник</h3>
+        <h2 style="font-size: 2.2rem; font-weight: bold; margin-bottom: 32px; color: #ffd700; text-transform: uppercase; letter-spacing: 0.02em;">Оксана Асалханова</h2>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.15rem; color: #fff; font-weight: 500;">
+          <li style="margin-bottom: 18px; display: flex; align-items: flex-start;"><span style="color: #ffd700; font-size: 1.5em; margin-right: 14px;">&#9658;</span>Сертифицированный мастер по работе с подсознанием</li>
+          <li style="margin-bottom: 18px; display: flex; align-items: flex-start;"><span style="color: #ffd700; font-size: 1.5em; margin-right: 14px;">&#9658;</span>Личный коуч топ-директоров и предпринимателей</li>
+          <li style="margin-bottom: 18px; display: flex; align-items: flex-start;"><span style="color: #ffd700; font-size: 1.5em; margin-right: 14px;">&#9658;</span>Опыт в сетевых компаниях 24 года, 4 автомобиля в качестве награды от компании</li>
+          <li style="margin-bottom: 18px; display: flex; align-items: flex-start;"><span style="color: #ffd700; font-size: 1.5em; margin-right: 14px;">&#9658;</span>Преподавала в университете ИРГТУ и Китае</li>
+          <li style="margin-bottom: 18px; display: flex; align-items: flex-start;"><span style="color: #ffd700; font-size: 1.5em; margin-right: 14px;">&#9658;</span>6 побед на мероприятие в Даллас для топ-директоров</li>
+          <li style="margin-bottom: 18px; display: flex; align-items: flex-start;"><span style="color: #ffd700; font-size: 1.5em; margin-right: 14px;">&#9658;</span>Проводила семинары во многих городах России, Франции и Швейцарии</li>
+          <li style="margin-bottom: 0; display: flex; align-items: flex-start;"><span style="color: #ffd700; font-size: 1.5em; margin-right: 14px;">&#9658;</span>Ученица Брайана Трейси, Джо Диспенза</li>
+        </ul>
+      </div>
+      <div class="mentor-photo" style="margin-bottom: 24px;">
+        <img src="images/блюр.jpg" alt="Оксана Асалханова" style="width: 100%; max-width: 420px; border-radius: 32px; box-shadow: 0 8px 48px #ffd70044, 0 0 0 12px #23243a; object-fit: cover; background: #23243a;" />
+      </div>
+    </div>
+  </section>
+  <!-- 6-й блок: Стоимость пробного занятия в стиле билета -->
+  <section style="max-width: 1200px; margin: 0 auto 120px auto; padding: 0 20px;">
+    <style>
+      @media (max-width: 600px) {
+        .ticket-content {
+          padding-left: 28px !important;
+          padding-right: 12px !important;
+          text-align: center !important;
+        }
+        .ticket-title {
+          font-size: 1.1rem !important;
+        }
+        .ticket-price {
+          font-size: 1.3rem !important;
+        }
+        .ticket-newprice {
+          font-size: 1.6rem !important;
+        }
+        .ticket-btn {
+          font-size: 1rem !important;
+          padding: 12px 10px !important;
+          width: 100%;
+          box-sizing: border-box;
+          margin: 18px auto 0 auto !important;
+          display: block !important;
+        }
+        .ticket-circle, .ticket-barcode {
+          display: none !important;
+        }
+      }
+      .ticket-content {
+        text-align: center;
+      }
+      .ticket-btn {
+        display: block;
+        margin: 18px auto 0 auto;
+      }
+    </style>
+    <div style="
+      position: relative;
+      background: linear-gradient(120deg, #23243a 60%, #252847 100%);
+      border: 1.5px solid #ffd700;
+      border-radius: 18px;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: visible;
+      box-shadow: 0 4px 32px #ffd70022;
+    ">
+      <!-- Левый вырез -->
+      <div class="ticket-circle" style="
+        position: absolute; left: -60px; top: 50%; transform: translateY(-50%);
+        width: 120px; height: 120px; background: none; z-index: 2;
+        pointer-events: none;
+      ">
+        <svg width="120" height="120">
+          <circle cx="60" cy="60" r="60" fill="#181924" stroke="#ffd700" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <!-- Правый вырез -->
+      <div class="ticket-circle" style="
+        position: absolute; right: -60px; top: 50%; transform: translateY(-50%);
+        width: 120px; height: 120px; background: none; z-index: 2;
+        pointer-events: none;
+      ">
+        <svg width="120" height="120">
+          <circle cx="60" cy="60" r="60" fill="#181924" stroke="#ffd700" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <!-- Контент -->
+      <div class="ticket-content" style="flex: 1 1 0; padding: 48px 0 48px 110px; min-width: 0;">
+        <div class="ticket-title" style="font-size: 2rem; font-weight: bold; color: #fff; margin-bottom: 18px; text-transform: uppercase;">
+          СТОИМОСТЬ 2-Х ЧАСОВОГО ПРОБНОГО ЗАНЯТИЯ
+        </div>
+        <div class="ticket-price" style="font-size: 2.2rem; color: #fff; margin-bottom: 10px;">
+          <span style="text-decoration: line-through; color: #ccc; font-size: 1.3rem; margin-right: 18px;">3 900 руб.</span>
+          <span class="ticket-newprice" style="color: #ffd700; font-weight: bold; font-size: 2.5rem;">1 900 руб.</span>
+        </div>
+        <div style="margin-bottom: 28px; color: #fff; font-size: 1.1rem;">
+          Успейте приобрести билет на пробное занятие по выгодной цене до <b>15.07.2025</b>
+        </div>
+        <a class="ticket-btn" href="https://t.me/Oxanaasa" target="_blank" rel="noopener noreferrer"
+          style="display: inline-block; background: linear-gradient(135deg, #f4d03f 0%, #ffd700 100%); color: #1a1d2e; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3); transition: background 0.3s, box-shadow 0.3s, color 0.3s;">
+          Зарегистрироваться
+        </a>
+      </div>
+      <!-- Штрихкод -->
+      <div class="ticket-barcode" style="flex: 0 0 120px; min-width: 100px; display: flex; align-items: center; justify-content: center; height: 220px; margin-right: 48px;">
+        <svg width="80" height="200" viewBox="0 0 80 200">
+          <g>
+            <rect x="0" y="0" width="4" height="200" fill="#fff"/>
+            <rect x="8" y="0" width="2" height="200" fill="#fff"/>
+            <rect x="14" y="0" width="6" height="200" fill="#fff"/>
+            <rect x="24" y="0" width="2" height="200" fill="#fff"/>
+            <rect x="30" y="0" width="4" height="200" fill="#fff"/>
+            <rect x="38" y="0" width="2" height="200" fill="#fff"/>
+            <rect x="44" y="0" width="6" height="200" fill="#fff"/>
+            <rect x="54" y="0" width="2" height="200" fill="#fff"/>
+            <rect x="60" y="0" width="4" height="200" fill="#fff"/>
+            <rect x="68" y="0" width="2" height="200" fill="#fff"/>
+            <rect x="74" y="0" width="4" height="200" fill="#fff"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <!-- 7-й блок: Тарифы -->
+  <section class="tariffs-section">
+    <style>
+      .tariffs-section {
+        max-width: 1200px;
+        margin: 0 auto 120px auto;
+        padding: 0 20px;
+        font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+      }
+      .tariffs-title {
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: #fff;
+      }
+      .tariffs-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 28px;
+        margin-top: 40px;
+      }
+      @media (min-width: 1100px) {
+        .tariffs-flex {
+          flex-wrap: nowrap;
+          gap: 24px;
+          justify-content: center;
+        }
+        .tariff-card {
+          max-width: 340px;
+          min-width: 0;
+          width: 100%;
+        }
+      }
+      .tariff-card {
+        border-radius: 18px;
+        box-shadow: 0 4px 32px #00000022;
+        padding: 38px 24px 32px 24px;
+        min-width: 0;
+        max-width: 370px;
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        border: none;
+        font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+        background: #fff;
+        color: #23243a;
+      }
+      .tariff-card.advanced {
+        background: #181924;
+        color: #ffd700;
+      }
+      .tariff-card.premium {
+        background: #d6b95c;
+        color: #181924;
+      }
+      .tariff-subtitle {
+        text-align: center;
+        width: 100%;
+        color: #b3b3b3;
+        font-size: 1.05rem;
+        letter-spacing: 0.15em;
+        margin-bottom: 6px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .tariff-title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        width: 100%;
+        text-align: center;
+      }
+      .tariff-card .tariff-title {
+        color: #b5a05a;
+      }
+      .tariff-card.advanced .tariff-title {
+        color: #ffd700;
+      }
+      .tariff-card.premium .tariff-title {
+        color: #181924;
+      }
+      .tariff-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 28px 0;
+        font-size: 1.08rem;
+        width: 100%;
+      }
+      .tariff-list li {
+        margin-bottom: 12px;
+        position: relative;
+        padding-left: 22px;
+        line-height: 1.5;
+        color: inherit;
+        font-weight: 500;
+      }
+      .tariff-list li:before {
+        content: '\25B6';
+        color: #b5a05a;
+        position: absolute;
+        left: 0;
+        font-size: 0.95em;
+        top: 0.18em;
+      }
+      .tariff-card.advanced .tariff-list li:before {
+        color: #ffd700;
+      }
+      .tariff-card.premium .tariff-list li:before {
+        color: #181924;
+      }
+      .tariff-price {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 18px;
+        margin-bottom: 0;
+        color: #b5a05a;
+        width: 100%;
+        text-align: center;
+      }
+      .tariff-card.advanced .tariff-price {
+        color: #ffd700;
+      }
+      .tariff-card.premium .tariff-price {
+        color: #181924;
+      }
+      .tariff-card.premium .tariff-subtitle {
+        color: #fff !important;
+      }
+      .tariff-card:not(.advanced):not(.premium) .tariff-subtitle {
+        color: #181924 !important;
+      }
+      .tariff-card:not(.premium) .tariff-price {
+        margin-top: auto;
+      }
+      @media (max-width: 900px) {
+        .tariffs-flex {
+          flex-direction: column;
+          gap: 12px;
+          align-items: center;
+        }
+        .tariff-card {
+          max-width: 98vw;
+          width: 100%;
+          min-width: 0;
+          padding: 14px 6px 18px 6px;
+          box-sizing: border-box;
+        }
+      }
+    </style>
+    <h2 class="tariffs-title">Тарифы</h2>
+    <div class="tariffs-flex">
+      <!-- Базовый -->
+      <div class="tariff-card">
+        <div class="tariff-subtitle">- ТАРИФ -</div>
+        <div class="tariff-title">БАЗОВЫЙ</div>
+        <ul class="tariff-list">
+          <li>15 часов онлайн обучения</li>
+          <li>закрытый чат для домашнего задания, а также месяц поддержки</li>
+          <li>разбор ваших видео-презентаций</li>
+          <li>работа над ошибками</li>
+          <li>система-buddy</li>
+          <li>работа в командах</li>
+          <li>личное сопровождение в течение месяца в чате</li>
+          <li>онлайн-выпускной</li>
+          <li>предоставление раздаточного полезного материала</li>
+        </ul>
+        <div class="tariff-price">15 000 руб</div>
+      </div>
+      <!-- Продвинутый -->
+      <div class="tariff-card advanced">
+        <div class="tariff-subtitle">- ТАРИФ -</div>
+        <div class="tariff-title">ПРОДВИНУТЫЙ</div>
+        <ul class="tariff-list">
+          <li>15 часов онлайн обучения</li>
+          <li>закрытый чат для домашнего задания, а также месяц поддержки</li>
+          <li>разбор ваших видео-презентаций</li>
+          <li>работа над ошибками</li>
+          <li>система-buddy</li>
+          <li>работа в командах</li>
+          <li>личное сопровождение в течение месяца в чате</li>
+          <li>онлайн-выпускной</li>
+          <li>предоставление раздаточного полезного материала</li>
+          <hr style="border: none; height: 2px; background: #ffd700; margin: 14px 0; width: 100%;">
+          <li><b>3 личных консультаций</b></li>
+          <li><b>доступ к 2 платным тренингам на выбор</b></li>
+        </ul>
+        <div class="tariff-price">30 000 руб</div>
+      </div>
+      <!-- Премиум -->
+      <div class="tariff-card premium">
+        <div class="tariff-subtitle">- ТАРИФ -</div>
+        <div class="tariff-title">ПРЕМИУМ</div>
+        <ul class="tariff-list">
+          <li>15 часов онлайн обучения</li>
+          <li>закрытый чат для домашнего задания, а также месяц поддержки</li>
+          <li>разбор ваших видео-презентаций</li>
+          <li>работа над ошибками</li>
+          <li>система-buddy</li>
+          <li>работа в командах</li>
+          <li>личное сопровождение в течение месяца в чате</li>
+          <li>онлайн-выпускной</li>
+          <li>предоставление раздаточного полезного материала</li>
+          <li>5 личных консультаций</li>
+          <li>доступ к 3 платным тренингам</li>
+          <hr style="border: none; height: 2px; background: #181924; margin: 14px 0; width: 100%;">
+          <li><b>2 сессии гипнотерапии</b></li>
+          <li><b>1 месяц сопровождения</b></li>
+        </ul>
+        <div class="tariff-price">150 000 руб</div>
+      </div>
+    </div>
+  </section>
+  <!-- Конец блока тарифов -->
+  <!-- 8-й блок: Остались вопросы? -->
+  <section class="questions-block" style="max-width: 1200px; margin: 0 auto 100px auto; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; background: none;">
+    <style>
+      .questions-block {
+        background: none;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        min-height: 340px;
+        margin-bottom: 80px;
+      }
+      .questions-left {
+        flex: 1 1 420px;
+        min-width: 320px;
+        max-width: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 24px;
+        padding-left: 60px;
+      }
+      .questions-title {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+      }
+      .questions-subtitle {
+        font-size: 1.2rem;
+        color: #e0c97a;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+      .questions-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+        margin-top: 8px;
+      }
+      .questions-btn {
+        background: linear-gradient(135deg, #f4d03f 0%, #ffd700 100%);
+        color: #181924;
+        padding: 18px 0;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(244, 208, 63, 0.18);
+        width: 100%;
+        max-width: 340px;
+        transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+        outline: none;
+        text-decoration: none;
+        text-align: center;
+      }
+      .questions-btn:hover, .questions-btn:focus {
+        background: linear-gradient(135deg, #ffd700 0%, #f4d03f 100%);
+        color: #252847;
+        box-shadow: 0 8px 32px #ffd70055;
+      }
+      .questions-right {
+        flex: 1 1 340px;
+        min-width: 260px;
+        max-width: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .questions-img {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        display: block;
+        filter: drop-shadow(0 0 48px #1a1d2e);
+      }
+      @media (max-width: 900px) {
+        .questions-block {
+          flex-direction: column;
+          gap: 12px;
+          align-items: stretch;
+        }
+        .questions-left, .questions-right {
+          max-width: 100vw;
+          min-width: 0;
+          width: 100%;
+        }
+        .questions-left {
+          padding-left: 0 !important;
+        }
+        .questions-img {
+          max-width: 260px;
+          margin: 0;
+          display: block;
+        }
+        .questions-title,
+        .questions-subtitle {
+          text-align: center !important;
+          width: 100%;
+        }
+      }
+    </style>
+    <div class="questions-left">
+      <div class="questions-title">ОСТАЛИСЬ ВОПРОСЫ?</div>
+      <div class="questions-subtitle">Обратитесь напрямую</div>
+      <div class="questions-btns">
+        <a class="questions-btn" href="https://t.me/Oxanaasa" target="_blank" rel="noopener noreferrer">Задать вопрос</a>
+        <a class="questions-btn" href="https://wa.me/79149595644" target="_blank" rel="noopener noreferrer">Написать в WHATSAPP</a>
+      </div>
+    </div>
+    <div class="questions-right">
+      <img class="questions-img" src="images/вопросы.png" alt="Вопросы" />
+    </div>
+  </section>
+</body>
+</html>
